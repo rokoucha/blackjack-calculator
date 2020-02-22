@@ -4,7 +4,7 @@
   "display": "standalone",
   "name": "Blackjack Calculator",
   "short_name": "Blackjack Calculator",
-  "start_url": ".",
+  "start_url": "./index.html",
   "icons": [{
     "sizes": "800x800",
     "src": "logo.png",
