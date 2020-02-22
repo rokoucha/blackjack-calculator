@@ -12,9 +12,11 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router": "^5.1.2",
-    "react-router-dom": "^5.1.2"
+    "react-router-dom": "^5.1.2",
+    "tailwindcss": "^1.2.0"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.0.6",
     "@types/react": "^16.9.22",
     "@types/react-dom": "^16.9.5",
     "@types/react-router": "^5.1.4",
@@ -29,5 +31,12 @@
     "prettier": "^1.19.1",
     "ts-node": "^8.6.2",
     "typescript": "^3.8.2"
+  },
+  "scripts": {
+    "build": "parcel build --no-source-maps src/index.html",
+    "clean": "rimraf dist/*",
+    "format": "prettier --write \"./src/**/*.{html,css,pcss,ts,tsx}\"",
+    "lint": "eslint --fix \"./src/**/*.{ts,tsx}\"",
+    "start": "parcel src/index.html"
   }
 }
