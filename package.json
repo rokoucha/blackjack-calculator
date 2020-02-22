@@ -38,6 +38,7 @@
     "clean": "rimraf dist/*",
     "format": "prettier --write \"./src/**/*.{html,css,pcss,ts,tsx}\"",
     "lint": "eslint --fix \"./src/**/*.{ts,tsx}\"",
+    "now-build": "yarn run build",
     "start": "parcel src/index.html"
   }
 }
