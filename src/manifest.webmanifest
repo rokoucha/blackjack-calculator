@@ -1,0 +1,13 @@
+{
+  "background_color": "#fff",
+  "description": "Calculate Blackjack points.",
+  "display": "standalone",
+  "name": "Blackjack Calculator",
+  "short_name": "Blackjack Calculator",
+  "start_url": ".",
+  "icons": [{
+    "sizes": "800x800",
+    "src": "logo.png",
+    "type": "image/png"
+  }]
+}
