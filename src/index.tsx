@@ -3,6 +3,8 @@ import { Route, Switch } from 'react-router'
 import * as React from 'react'
 import ReactDOM from 'react-dom'
 
+import './styles.css'
+
 import Easy from './pages/easy'
 
 ReactDOM.render(

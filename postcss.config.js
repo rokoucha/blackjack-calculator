@@ -1,5 +1,15 @@
-const plugins = process.env.NODE_ENV === 'production'
-  ? ['tailwindcss', 'autoprefixer', '@fullhuman/postcss-purgecss']
-  : ['tailwindcss']
+const purgecss = require('@fullhuman/postcss-purgecss')({
+  content: [
+    './src/**/*.html',
+    './src/**/*.tsx',
+  ],
+  defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
+})
 
-module.exports = { plugins }
+module.exports = {
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+    ...process.env.NODE_ENV === 'production' ? [purgecss] : [],
+  ],
+}

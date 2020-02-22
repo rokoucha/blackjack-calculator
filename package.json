@@ -35,11 +35,12 @@
     "typescript": "^3.8.2"
   },
   "scripts": {
-    "build": "parcel build --no-source-maps src/index.html",
-    "clean": "rimraf dist/*",
+    "build:css": "postcss src/styles.pcss -o src/styles.css --env production",
+    "build:js": "yarn run clean && parcel build --no-source-maps src/index.html",
+    "clean": "rimraf dist/* && rimraf .cache/*",
     "format": "prettier --write \"./src/**/*.{html,css,pcss,ts,tsx}\"",
     "lint": "eslint --fix \"./src/**/*.{ts,tsx}\"",
-    "now-build": "yarn run build",
-    "start": "parcel src/index.html"
+    "now-build": "yarn run build:css && yarn run build:js",
+    "start": "yarn run clean && postcss src/styles.pcss -o src/styles.css && parcel src/index.html"
   }
 }
