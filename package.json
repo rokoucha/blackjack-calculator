@@ -1,0 +1,33 @@
+{
+  "name": "blackjack-calculator",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "ssh://git@github.com/rokoucha/blackjack-calculator.git",
+  "author": "Rokoucha <rokoucha@rokoucha.net>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "autoprefixer": "^9.7.4",
+    "parcel": "^1.12.4",
+    "postcss-cli": "^7.1.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.22",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-router": "^5.1.4",
+    "@types/react-router-dom": "^5.1.3",
+    "@typescript-eslint/eslint-plugin": "^2.20.0",
+    "@typescript-eslint/parser": "^2.20.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.4.0",
+    "prettier": "^1.19.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.2"
+  }
+}
