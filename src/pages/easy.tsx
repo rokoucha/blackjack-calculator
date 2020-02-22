@@ -16,7 +16,7 @@ const CountButton: React.FC<{ onClick: Function }> = ({
   </button>
 )
 
-const home: React.FC<React.Props<void>> = () => {
+const home: React.FC<{}> = () => {
   const [count, setCount] = React.useState(0)
 
   const minus1 = () => setCount(count - 1)
