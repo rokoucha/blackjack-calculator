@@ -5,8 +5,6 @@ import ReactDOM from 'react-dom'
 
 import Easy from './pages/easy'
 
-import './styles.css'
-
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
